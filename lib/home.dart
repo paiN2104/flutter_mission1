@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -67,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.asset(
-                                      'images/header.jpg',
+                                      'images/decade.jpeg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -79,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.asset(
-                                      'images/header.jpg',
+                                      'images/kuuga.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -91,7 +89,7 @@ class _HomePageState extends State<HomePage> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.asset(
-                                      'images/header.jpg',
+                                      'images/kuugga.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -103,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.asset(
-                                      'images/header.jpg',
+                                      'images/double.jpg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -115,7 +113,19 @@ class _HomePageState extends State<HomePage> {
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: Image.asset(
-                                      'images/header.jpg',
+                                      'images/build.jpeg',
+                                      width: 100,
+                                      height: 100,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 5),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image.asset(
+                                      'images/agito.jpeg',
                                       width: 100,
                                       height: 100,
                                       fit: BoxFit.cover,
@@ -142,9 +152,9 @@ class _HomePageState extends State<HomePage> {
                           padding: EdgeInsets.all(10),
                           child: Text(
                             '''
-Serial Kamen Rider atau dalam bahasa Jepang aslinya Kamen Rider Series (仮面ライダーシリーズ, Kamen Raidā Shirīzu, terjemahan resmi: Masked Rider Series)—sempat diterjemahkan menjadi "Ksatria Baja" ketika ditayangkan di Indonesia— adalah sebuah Waralaba media untuk Manga dan program drama Televisi dan film tokusatsu, yang diciptakan oleh seorang mangaka, Shotaro Ishinomori. 
-Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai sepeda motor dan bermotif serangga melawan organisasi penjahat super, yang dikenal sebagai kaijin (怪人). Waralaba ini pertama kali menayangkan serial televisi Kamen Rider pada tahun 1971, di mana seorang mahasiswa yang bernama Takeshi Hongo dan usahanya untuk mengalahkan organisasi penakluk dunia, Shocker. Popularitasnya berkembang; serial asli melanjutkan sekuel televisi dan film dan meluncurkan Ledakan Kaiju Kedua (juga dikenal sebagai Henshin Boom) di televisi Jepang selama awal 1970-an, yang berdampak pada superhero dan genre aksi-petualangan lainnya di Jepang.
-''',
+                            Serial Kamen Rider atau dalam bahasa Jepang aslinya Kamen Rider Series (仮面ライダーシリーズ, Kamen Raidā Shirīzu, terjemahan resmi: Masked Rider Series)—sempat diterjemahkan menjadi "Ksatria Baja" ketika ditayangkan di Indonesia— adalah sebuah Waralaba media untuk Manga dan program drama Televisi dan film tokusatsu, yang diciptakan oleh seorang mangaka, Shotaro Ishinomori. 
+                            Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai sepeda motor dan bermotif serangga melawan organisasi penjahat super, yang dikenal sebagai kaijin (怪人). Waralaba ini pertama kali menayangkan serial televisi Kamen Rider pada tahun 1971, di mana seorang mahasiswa yang bernama Takeshi Hongo dan usahanya untuk mengalahkan organisasi penakluk dunia, Shocker. Popularitasnya berkembang; serial asli melanjutkan sekuel televisi dan film dan meluncurkan Ledakan Kaiju Kedua (juga dikenal sebagai Henshin Boom) di televisi Jepang selama awal 1970-an, yang berdampak pada superhero dan genre aksi-petualangan lainnya di Jepang.
+                            ''',
                             style: TextStyle(
                                 fontSize: 18,
                                 wordSpacing: 0.5,

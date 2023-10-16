@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Flexible(
                     flex: 2,
-                    child: Container(
+                    child: SizedBox(
                       width: double.infinity,
                       height: double.infinity,
                       child: Image.asset(
@@ -49,93 +49,118 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+
+                  // Foto
                   Flexible(
                       flex: 1,
-                      child: Container(
-                        margin: EdgeInsets.only(
-                            top: 7, bottom: 5, left: 8, right: 8),
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Flexible(
+                            flex: 6,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
                               children: [
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/decade.jpeg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(12),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/agito.jpeg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/kuuga.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(12),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/build.jpeg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/kuugga.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(12),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/decade.jpeg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/double.jpg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/double.jpg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/build.jpeg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/kuuga.jpg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(
-                                      'images/agito.jpeg',
-                                      width: 100,
-                                      height: 100,
-                                      fit: BoxFit.cover,
+                                Flexible(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8),
+                                      child: AspectRatio(
+                                        aspectRatio: 1.0,
+                                        child: Image.asset(
+                                          'images/kuugga.jpg',
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
                               ],
-                            )
-                          ],
-                        ),
+                            ),
+                          ),
+                        ],
                       )),
                   Flexible(
                     flex: 4,
@@ -151,7 +176,7 @@ class _HomePageState extends State<HomePage> {
                         child: SingleChildScrollView(
                           padding: EdgeInsets.all(10),
                           child: Text(
-'''Serial Kamen Rider atau dalam bahasa Jepang aslinya Kamen Rider Series (仮面ライダーシリーズ, Kamen Raidā Shirīzu, terjemahan resmi: Masked Rider Series)—sempat diterjemahkan menjadi "Ksatria Baja" ketika ditayangkan di Indonesia— adalah sebuah Waralaba media untuk Manga dan program drama Televisi dan film tokusatsu, yang diciptakan oleh seorang mangaka, Shotaro Ishinomori. 
+                            '''Serial Kamen Rider atau dalam bahasa Jepang aslinya Kamen Rider Series (仮面ライダーシリーズ, Kamen Raidā Shirīzu, terjemahan resmi: Masked Rider Series)—sempat diterjemahkan menjadi "Ksatria Baja" ketika ditayangkan di Indonesia— adalah sebuah Waralaba media untuk Manga dan program drama Televisi dan film tokusatsu, yang diciptakan oleh seorang mangaka, Shotaro Ishinomori. 
 Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai sepeda motor dan bermotif serangga melawan organisasi penjahat super, yang dikenal sebagai kaijin (怪人). Waralaba ini pertama kali menayangkan serial televisi Kamen Rider pada tahun 1971, di mana seorang mahasiswa yang bernama Takeshi Hongo dan usahanya untuk mengalahkan organisasi penakluk dunia, Shocker. Popularitasnya berkembang; serial asli melanjutkan sekuel televisi dan film dan meluncurkan Ledakan Kaiju Kedua (juga dikenal sebagai Henshin Boom) di televisi Jepang selama awal 1970-an, yang berdampak pada superhero dan genre aksi-petualangan lainnya di Jepang.
 ''',
                             style: TextStyle(
@@ -184,7 +209,7 @@ Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai
                 child: Icon(
                   Icons.favorite,
                   color: isFavorite ? Colors.red : Colors.grey,
-                  ),
+                ),
               )),
         ],
       ),

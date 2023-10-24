@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/booking.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -190,7 +192,7 @@ Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai
                         ),
                       )
                     ]),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -211,6 +213,42 @@ Kamen Rider adalah serial yang bertemakan pahlawan super yang selalu mengendarai
                   color: isFavorite ? Colors.red : Colors.grey,
                 ),
               )),
+          Flexible(
+            flex: 1,
+            child: Container(
+              margin: EdgeInsets.only(bottom: 20, right: 20),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: ElevatedButton.icon(
+                    onPressed: () {
+                      Fluttertoast.showToast(
+                          msg: 'Welcome to Booking Page!',
+                          backgroundColor: Colors.green);
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) {
+                          return BookingPage();
+                        }),
+                      );
+                    },
+                    icon: Icon(Icons.check_box),
+                    label: Text("Book Now"),
+                    style: ElevatedButton.styleFrom(
+                      elevation: 2,
+                      padding: EdgeInsets.all(12),
+                      backgroundColor: Colors.lightBlue[100],
+                      foregroundColor: Colors.blue,
+                      textStyle: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                    )),
+              ),
+            ),
+          ),
         ],
       ),
     );
